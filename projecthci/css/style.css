@@ -42,7 +42,7 @@ header {
     align-items: center;
     justify-content: center;
     min-height: calc(94vh - 17px);
-    background-image: linear-gradient(to right, rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 0.6)), url('../photos/TIPbg.png'); 
+    background-image: linear-gradient(to right, rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 0.6)), url('/photos/TIPbg.png'); 
     background-size: cover;
     background-position: center;
     padding: 40px 20px;
