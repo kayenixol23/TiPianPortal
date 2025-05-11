@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Detail - TiPian Portal</title>
+    <link rel="icon" href="https://logodix.com/logo/1807102.jpg">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2 class="logo-text">
+                    <span class="logo-title">
+                        <span class="logo-title-top">TECHNOLOGICAL INSTITUTE OF THE PHILIPPINES</span>
+                        <div class="branding">
+                        <span class="yellow-text">TiPian</span>
+                        <span class="white-text">Portal</span>
+                        </div>  
+                    </span>
+                </h2>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="courses.html">
+                            <i class="fas fa-book"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="groups.html">
+                            <i class="fas fa-users"></i>
+                            <span>Groups</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="grades.html">
+                            <i class="fas fa-star"></i>
+                            <span>Grades</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="attendance.html">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Attendance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="messages.html">
+                            <i class="fas fa-comments"></i>
+                            <span>Messages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="payments.html">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Payments</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="sidebar-footer">
+                    <ul>
+                        <li>
+                            <a href="help.html">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Help Center</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Log Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Top Navigation Bar -->
+            <header class="top-nav">
+                <div class="top-nav-left">
+                    <h1>Course Details</h1>
+                </div>
+                
+                <div class="top-nav-right">
+                    <div class="notifications">
+                        <button class="notification-btn">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-count">3</span>
+                        </button>
+                        <div class="notification-dropdown">
+                            <!-- Notification content here -->
+                        </div>
+                    </div>
+                    
+                    <div class="user-profile">
+                        <div class="user-info">
+                            <span class="user-name">USER'S NAME</span>
+                        </div>
+                        <div class="user-avatar">
+                            <img src="https://ui-avatars.com/api/?name=U+N&background=f8dd1b&color=000" alt="User Avatar">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Course Detail Content -->
+            <div class="content">
+                <!-- Course Header -->
+                <div class="course-detail-header">
+                    <div class="course-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="course-title-section">
+                        <h2>Computer Programming</h2>
+                        <div class="instructor-info">
+                            <div class="instructor-avatar">
+                                <img src="https://ui-avatars.com/api/?name=P+E&background=3498db&color=fff" alt="Instructor Avatar">
+                            </div>
+                            <span class="instructor-name">Prof Elizer</span>
+                        </div>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <span class="meta-value">7:30-8:30 TTh</span>
+                                <span class="meta-label">Schedule</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-value">PC12</span>
+                                <span class="meta-label">Room</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-value">1.00</span>
+                                <span class="meta-label">Grade</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course Tabs -->
+                <div class="course-tabs">
+                    <div class="tabs-nav">
+                        <div class="tab-item active" data-tab="content">
+                            <i class="fas fa-book"></i> Content
+                        </div>
+                        <div class="tab-item" data-tab="assignments">
+                            <i class="fas fa-tasks"></i> Assignments
+                        </div>
+                        <div class="tab-item" data-tab="materials">
+                            <i class="fas fa-file-alt"></i> Materials
+                        </div>
+                        <div class="tab-item" data-tab="grades">
+                            <i class="fas fa-star"></i> Grades
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content">
+                        <!-- Content Tab -->
+                        <div class="tab-pane active" id="content-tab">
+                            <div class="course-content-list">
+                                <!-- Module 1 -->
+                                <div class="content-module">
+                                    <div class="module-header expanded">
+                                        <div class="module-title">
+                                            <i class="fas fa-folder"></i> Module 1: Introduction to Programming
+                                        </div>
+                                        <div class="module-toggle">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="module-items">
+                                        <div class="module-item">
+                                            <div class="item-icon">
+                                                <i class="fas fa-file-pdf"></i>
+                                            </div>
+                                            <div class="item-details">
+                                                <div class="item-title">Introduction to Programming Concepts</div>
+                                                <div class="item-meta">
+                                                    <span><i class="fas fa-file"></i> PDF Document</span>
+                                                    <span><i class="fas fa-clock"></i> 20 min read</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="item-icon">
+                                                <i class="fas fa-file-video"></i>
+                                            </div>
+                                            <div class="item-details">
+                                                <div class="item-title">Setting Up Your Development Environment</div>
+                                                <div class="item-meta">
+                                                    <span><i class="fas fa-video"></i> Video Lecture</span>
+                                                    <span><i class="fas fa-clock"></i> 15 min</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="item-icon">
+                                                <i class="fas fa-code"></i>
+                                            </div>
+                                            <div class="item-details">
+                                                <div class="item-title">First Programming Exercise</div>
+                                                <div class="item-meta">
+                                                    <span><i class="fas fa-tasks"></i> Practice Exercise</span>
+                                                    <span><i class="fas fa-clock"></i> 30 min</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Module 2 -->
+                                <div class="content-module">
+                                    <div class="module-header">
+                                        <div class="module-title">
+                                            <i class="fas fa-folder"></i> Module 2: Variables and Data Types
+                                        </div>
+                                        <div class="module-toggle">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="module-items">
+                                        <div class="module-item">
+                                            <div class="item-icon">
+                                                <i class="fas fa-file-pdf"></i>
+                                            </div>
+                                            <div class="item-details">
+                                                <div class="item-title">Understanding Variables</div>
+                                                <div class="item-meta">
+                                                    <span><i class="fas fa-file"></i> PDF Document</span>
+                                                    <span><i class="fas fa-clock"></i> 25 min read</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="item-icon">
+                                                <i class="fas fa-file-video"></i>
+                                            </div>
+                                            <div class="item-details">
+                                                <div class="item-title">Data Types and Operators</div>
+                                                <div class="item-meta">
+                                                    <span><i class="fas fa-video"></i> Video Lecture</span>
+                                                    <span><i class="fas fa-clock"></i> 20 min</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="item-icon">
+                                                <i class="fas fa-code"></i>
+                                            </div>
+                                            <div class="item-details">
+                                                <div class="item-title">Variable Exercise</div>
+                                                <div class="item-meta">
+                                                    <span><i class="fas fa-tasks"></i> Practice Exercise</span>
+                                                    <span><i class="fas fa-clock"></i> 45 min</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Module 3 -->
+                                <div class="content-module">
+                                    <div class="module-header">
+                                        <div class="module-title">
+                                            <i class="fas fa-folder"></i> Module 3: Control Structures
+                                        </div>
+                                        <div class="module-toggle">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="module-items">
+                                        <div class="module-item">
+                                            <div class="item-icon">
+                                                <i class="fas fa-file-pdf"></i>
+                                            </div>
+                                            <div class="item-details">
+                                                <div class="item-title">Conditional Statements</div>
+                                                <div class="item-meta">
+                                                    <span><i class="fas fa-file"></i> PDF Document</span>
+                                                    <span><i class="fas fa-clock"></i> 30 min read</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="item-icon">
+                                                <i class="fas fa-file-video"></i>
+                                            </div>
+                                            <div class="item-details">
+                                                <div class="item-title">Loops and Iteration</div>
+                                                <div class="item-meta">
+                                                    <span><i class="fas fa-video"></i> Video Lecture</span>
+                                                    <span><i class="fas fa-clock"></i> 25 min</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="item-icon">
+                                                <i class="fas fa-code"></i>
+                                            </div>
+                                            <div class="item-details">
+                                                <div class="item-title">Control Structures Exercise</div>
+                                                <div class="item-meta">
+                                                    <span><i class="fas fa-tasks"></i> Practice Exercise</span>
+                                                    <span><i class="fas fa-clock"></i> 60 min</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Assignments Tab -->
+                        <div class="tab-pane" id="assignments-tab">
+                            <div class="assignment-list">
+                                <div class="assignment-card">
+                                    <div class="assignment-card-header">
+                                        <div class="assignment-card-title">
+                                            <i class="fas fa-tasks"></i> Programming Exercise 5
+                                        </div>
+                                        <div class="assignment-status pending">Not Started</div>
+                                    </div>
+                                    <div class="assignment-card-body">
+                                        <div class="assignment-details">
+                                            <div class="assignment-detail">
+                                                <span class="detail-label">Due Date</span>
+                                                <span class="detail-value">Jan 10, 2025</span>
+                                            </div>
+                                            <div class="assignment-detail">
+                                                <span class="detail-label">Points</span>
+                                                <span class="detail-value">100</span>
+                                            </div>
+                                            <div class="assignment-detail">
+                                                <span class="detail-label">Submission Type</span>
+                                                <span class="detail-value">File Upload</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="assignment-description">
+                                            <p>Create a program that demonstrates the use of arrays, loops, and functions to solve the following problem:</p>
+                                            <ol>
+                                                <li>Create an array of 10 random integers between 1 and 100.</li>
+                                                <li>Write a function that finds the maximum value in the array.</li>
+                                                <li>Write a function that finds the minimum value in the array.</li>
+                                                <li>Write a function that calculates the average of all values in the array.</li>
+                                                <li>Display all results with appropriate labels.</li>
+                                            </ol>
+                                        </div>
+                                        
+                                        <div class="file-upload-section">
+                                            <label for="file-upload" class="file-upload-area">
+                                                <div class="file-upload-icon">
+                                                    <i class="fas fa-cloud-upload-alt"></i>
+                                                </div>
+                                                <div class="file-upload-text">Drag and drop your file here or click to browse</div>
+                                                <div class="file-upload-hint">Supports .java, .py, .cpp files up to 10MB</div>
+                                                <input type="file" id="file-upload" class="file-input" accept=".java,.py,.cpp">
+                                            </label>
+                                            
+                                            <div class="uploaded-files" id="uploaded-files-list">
+                                                <!-- Uploaded files will appear here -->
+                                            </div>
+                                        </div>
+                                        
+                                        <button class="submit-btn" id="submit-assignment" disabled>Submit Assignment</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="assignment-card">
+                                    <div class="assignment-card-header">
+                                        <div class="assignment-card-title">
+                                            <i class="fas fa-tasks"></i> Programming Quiz 4
+                                        </div>
+                                        <div class="assignment-status completed">Completed</div>
+                                    </div>
+                                    <div class="assignment-card-body">
+                                        <div class="assignment-details">
+                                            <div class="assignment-detail">
+                                                <span class="detail-label">Due Date</span>
+                                                <span class="detail-value">Dec 15, 2024</span>
+                                            </div>
+                                            <div class="assignment-detail">
+                                                <span class="detail-label">Points</span>
+                                                <span class="detail-value">50</span>
+                                            </div>
+                                            <div class="assignment-detail">
+                                                <span class="detail-label">Your Score</span>
+                                                <span class="detail-value">45/50</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="assignment-description">
+                                            <p>This quiz covered basic control structures, arrays, and functions. You've already completed this assignment.</p>
+                                        </div>
+                                        
+                                        <button class="btn btn-outline">View Submission</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Materials Tab -->
+                        <div class="tab-pane" id="materials-tab">
+                            <div class="materials-list">
+                                <p>Course materials will be shown here.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Grades Tab -->
+                        <div class="tab-pane" id="grades-tab">
+                            <div class="grades-table">
+                                <p>Course grades will be shown here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/course-detail.js"></script>
+</body>
+</html>
