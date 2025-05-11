@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - TiPian Portal</title>
+    <link rel="icon" href="https://logodix.com/logo/1807102.jpg">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/messages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2 class="logo-text">
+                    <span class="logo-title">
+                        <span class="logo-title-top">TECHNOLOGICAL INSTITUTE OF THE PHILIPPINES</span>
+                        <div class="branding">
+                        <span class="yellow-text">TiPian</span>
+                        <span class="white-text">Portal</span>
+                        </div>
+                    </span>
+                </h2>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="courses.html">
+                            <i class="fas fa-book"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="groups.html">
+                            <i class="fas fa-users"></i>
+                            <span>Groups</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="grades.html">
+                            <i class="fas fa-star"></i>
+                            <span>Grades</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="attendance.html">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Attendance</span>
+                        </a>
+                    </li>
+                    <li  class="active">
+                        <a href="messages.html">
+                            <i class="fas fa-comments"></i>
+                            <span>Messages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="payments.html">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Payments</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="sidebar-footer">
+                    <ul>
+                        <li>
+                            <a href="help.html">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Help Center</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Log Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Top Navigation Bar -->
+            <header class="top-nav">
+                <div class="top-nav-left">
+                    <h1>Messages</h1>
+                </div>
+                
+                <div class="top-nav-right">
+                    <div class="notifications">
+                        <button class="notification-btn">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-count">3</span>
+                        </button>
+                        <div class="notification-dropdown">
+                            <!-- Notification content here -->
+                        </div>
+                    </div>
+                    
+                    <div class="user-profile">
+                        <div class="user-info">
+                            <span class="user-name">USER'S NAME</span>
+                        </div>
+                        <div class="user-avatar">
+                            <img src="https://ui-avatars.com/api/?name=U+N&background=f8dd1b&color=000" alt="User Avatar">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Messages Content -->
+            <div class="content p-0">
+                <div class="messages-container">
+                    <!-- Messages Sidebar -->
+                    <div class="messages-sidebar">
+                        <div class="search-container">
+                            <div class="search-input">
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="Search messages...">
+                            </div>
+                        </div>
+                        
+                        <div class="contacts-list">
+                            <div class="contact active" data-contact="dr-smith">
+                                <div class="contact-avatar">
+                                    <span>D</span>
+                                </div>
+                                <div class="contact-info">
+                                    <div class="contact-name">Prof Elizer</div>
+                                    <div class="contact-preview">Please submit your assignment...</div>
+                                </div>
+                                <div class="contact-meta">
+                                    <div class="contact-time">10:30 AM</div>
+                                    <div class="contact-badge">1</div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact" data-contact="programming-group">
+                                <div class="contact-avatar blue">
+                                    <span>P</span>
+                                </div>
+                                <div class="contact-info">
+                                    <div class="contact-name">Programming Group</div>
+                                    <div class="contact-preview">We need to finish the project</div>
+                                </div>
+                                <div class="contact-meta">
+                                    <div class="contact-time">Yesterday</div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact" data-contact="jane-doe">
+                                <div class="contact-avatar green">
+                                    <span>J</span>
+                                </div>
+                                <div class="contact-info">
+                                    <div class="contact-name">Jane</div>
+                                    <div class="contact-preview">Do you have the notes from class?</div>
+                                </div>
+                                <div class="contact-meta">
+                                    <div class="contact-time">Yesterday</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Messages Content -->
+                    <div class="messages-content">
+                        <div class="messages-header">
+                            <div class="contact-info">
+                                <div class="contact-avatar">
+                                    <span>D</span>
+                                </div>
+                                <div>
+                                    <div class="contact-name">Prof Elizer</div>
+                                    <div class="contact-status">Online</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="messages-body" id="messagesBody">
+                            <div class="message-day">
+                                <div class="day-divider">
+                                    <span>Today</span>
+                                </div>
+                                
+                                <div class="message received">
+                                    <div class="message-content">
+                                        <p>Hello. I wanted to remind you about the assignment due tomorrow.</p>
+                                    </div>
+                                    <div class="message-time">10:15 AM</div>
+                                </div>
+                                
+                                <div class="message sent">
+                                    <div class="message-content">
+                                        <p>Hi Prof Elizer, thanks for the reminder. I'm working on it now.</p>
+                                    </div>
+                                    <div class="message-time">10:20 AM</div>
+                                </div>
+                                
+                                <div class="message received">
+                                    <div class="message-content">
+                                        <p>Great! Make sure to include all the required sections. Let me know if you have any questions.</p>
+                                    </div>
+                                    <div class="message-time">10:25 AM</div>
+                                </div>
+                                
+                                <div class="message received">
+                                    <div class="message-content">
+                                        <p>Also, please submit your assignment by tomorrow. The deadline is at 11:59 PM.</p>
+                                    </div>
+                                    <div class="message-time">10:30 AM</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="messages-footer">
+                            <form id="messageForm">
+                                <div class="message-input">
+                                    <input type="text" placeholder="Type a message..." id="messageInput">
+                                    <button type="submit">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/messages.js"></script>
+</body>
+</html>

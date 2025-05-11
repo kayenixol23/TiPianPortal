@@ -1,0 +1,221 @@
+/* Attendance Page Specific Styles */
+
+.page-title {
+    font-size: var(--font-2xl);
+    color: var(--primary-yellow);
+    margin-bottom: var(--spacing-xs);
+    font-weight: bold;
+}
+
+.attendance-header {
+    margin-bottom: var(--spacing-xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-select {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-md);
+    background-color: var(--primary-white);
+    min-width: 200px;
+}
+
+.attendance-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.overview-card {
+    background-color: var(--primary-white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+}
+
+.overview-value {
+    font-size: var(--font-2xl);
+    font-weight: bold;
+    margin-bottom: var(--spacing-xs);
+}
+
+.overview-label {
+    color: var(--gray-600);
+    font-size: var(--font-sm);
+}
+
+.overview-card.present .overview-value {
+    color: #2ecc71;
+}
+
+.overview-card.absent .overview-value {
+    color: #e74c3c;
+}
+
+.overview-card.total .overview-value {
+    color: #3498db;
+}
+
+.overview-card.rate .overview-value {
+    color: #f39c12;
+}
+
+.attendance-records {
+    background-color: var(--primary-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.records-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--gray-100);
+    font-weight: bold;
+    padding: var(--spacing-md);
+}
+
+.header-cell {
+    padding: var(--spacing-sm);
+    color: var(--gray-700);
+}
+
+.records-body {
+    padding: var(--spacing-md);
+}
+
+.record-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: var(--spacing-sm);
+    border-bottom: 1px solid var(--gray-200);
+    transition: background-color var(--transition-fast);
+}
+
+.record-row:last-child {
+    border-bottom: none;
+}
+
+.record-row:hover {
+    background-color: var(--gray-100);
+}
+
+.cell {
+    padding: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+}
+
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: var(--font-xs);
+    font-weight: bold;
+}
+
+.status.present {
+    background-color: rgba(46, 204, 113, 0.1);
+    color: #2ecc71;
+}
+
+.status.absent {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+}
+
+.attendance-summary {
+    margin-top: var(--spacing-xl);
+}
+
+.attendance-summary h3 {
+    font-size: var(--font-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.summary-card {
+    background-color: var(--primary-white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.course-name {
+    font-weight: bold;
+    margin-bottom: var(--spacing-xs);
+}
+
+.course-schedule {
+    color: var(--gray-600);
+    font-size: var(--font-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.attendance-progress {
+    height: 8px;
+    background-color: var(--gray-200);
+    border-radius: 4px;
+    margin-bottom: var(--spacing-sm);
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--primary-yellow);
+    border-radius: 4px;
+    transition: width var(--transition-normal);
+}
+
+.attendance-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rate {
+    font-weight: bold;
+    color: var(--primary-black);
+}
+
+.classes {
+    font-size: var(--font-sm);
+    color: var(--gray-600);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 992px) {
+    .attendance-overview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .attendance-header {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .course-select {
+        width: 100%;
+    }
+    
+    .attendance-overview {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .summary-cards {
+        grid-template-columns: 1fr;
+    }
+}

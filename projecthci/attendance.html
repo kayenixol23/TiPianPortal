@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance - TiPian Portal</title>
+    <link rel="icon" href="https://logodix.com/logo/1807102.jpg">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/attendance.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2 class="logo-text">
+                    <span class="logo-title">
+                        <span class="logo-title-top">TECHNOLOGICAL INSTITUTE OF THE PHILIPPINES</span>
+                        <div class="brandin">
+                        <span class="yellow-text">TiPian</span>
+                        <span class="white-text">Portal</span>
+                        </div>
+                    </span>
+                </h2>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="courses.html">
+                            <i class="fas fa-book"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="groups.html">
+                            <i class="fas fa-users"></i>
+                            <span>Groups</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="grades.html">
+                            <i class="fas fa-star"></i>
+                            <span>Grades</span>
+                        </a>
+                    </li>
+                    <li  class="active">
+                        <a href="attendance.html">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Attendance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="messages.html">
+                            <i class="fas fa-comments"></i>
+                            <span>Messages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="payments.html">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Payments</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="sidebar-footer">
+                    <ul>
+                        <li>
+                            <a href="help.html">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Help Center</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Log Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Top Navigation Bar -->
+            <header class="top-nav">
+                <div class="top-nav-left">
+                    <h1>Attendance</h1>
+                </div>
+                
+                <div class="top-nav-right">
+                    <div class="notifications">
+                        <button class="notification-btn">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-count">3</span>
+                        </button>
+                        <div class="notification-dropdown">
+                            <!-- Notification content here -->
+                        </div>
+                    </div>
+                    
+                    <div class="user-profile">
+                        <div class="user-info">
+                            <span class="user-name">USER'S NAME</span>
+                        </div>
+                        <div class="user-avatar">
+                            <img src="https://ui-avatars.com/api/?name=U+N&background=f8dd1b&color=000" alt="User Avatar">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Attendance Content -->
+            <div class="content">
+                <div class="attendance-header">
+                    <select class="course-select">
+                        <option value="cs101">Computer Programming</option>
+                        <option value="cs102">Introduction to Human Computer Interaction</option>
+                        <option value="cs103">Discrete Mathematics</option>
+                    </select>
+                </div>
+
+                <div class="attendance-overview">
+                    <div class="overview-card present">
+                        <div class="overview-value">4</div>
+                        <div class="overview-label">Present</div>
+                    </div>
+                    
+                    <div class="overview-card absent">
+                        <div class="overview-value">1</div>
+                        <div class="overview-label">Absent</div>
+                    </div>
+                    
+                    <div class="overview-card total">
+                        <div class="overview-value">5</div>
+                        <div class="overview-label">Total Classes</div>
+                    </div>
+                    
+                    <div class="overview-card rate">
+                        <div class="overview-value">80%</div>
+                        <div class="overview-label">Attendance Rate</div>
+                    </div>
+                </div>
+
+                <div class="attendance-records">
+                    <div class="records-header">
+                        <div class="header-cell">Date</div>
+                        <div class="header-cell">Status</div>
+                    </div>
+                    
+                    <div class="records-body">
+                        <div class="record-row">
+                            <div class="cell">May 2, 2025</div>
+                            <div class="cell"><span class="status present">Present</span></div>
+                        </div>
+                        
+                        <div class="record-row">
+                            <div class="cell">May 4, 2025</div>
+                            <div class="cell"><span class="status present">Present</span></div>
+                        </div>
+                        
+                        <div class="record-row">
+                            <div class="cell">May 7, 2025</div>
+                            <div class="cell"><span class="status absent">Absent</span></div>
+                        </div>
+                        
+                        <div class="record-row">
+                            <div class="cell">May 9, 2025</div>
+                            <div class="cell"><span class="status present">Present</span></div>
+                        </div>
+                        
+                        <div class="record-row">
+                            <div class="cell">May 11, 2025</div>
+                            <div class="cell"><span class="status present">Present</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attendance-summary">
+                    <h3>Attendance Summary</h3>
+                    <div class="summary-cards">
+                        <div class="summary-card">
+                            <div class="course-name">Computer Programming</div>
+                            <div class="course-schedule">7:30-8:30 TTh</div>
+                            <div class="attendance-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                            <div class="attendance-stats">
+                                <span class="rate">80%</span>
+                                <span class="classes">4/5 classes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="summary-card">
+                            <div class="course-name">Introduction to Human Computer Interaction</div>
+                            <div class="course-schedule">7:30-8:30 TTh</div>
+                            <div class="attendance-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                            <div class="attendance-stats">
+                                <span class="rate">80%</span>
+                                <span class="classes">4/5 classes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="summary-card">
+                            <div class="course-name">Discrete Mathematics</div>
+                            <div class="course-schedule">7:30-8:30 TTh</div>
+                            <div class="attendance-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                            <div class="attendance-stats">
+                                <span class="rate">80%</span>
+                                <span class="classes">4/5 classes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/attendance.js"></script>
+</body>
+</html>

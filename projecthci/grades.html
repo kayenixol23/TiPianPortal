@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades - TiPian Portal</title>
+    <link rel="icon" href="https://logodix.com/logo/1807102.jpg">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grades.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2 class="logo-text">
+                    <span class="logo-title">
+                        <span class="logo-title-top">TECHNOLOGICAL INSTITUTE OF THE PHILIPPINES</span>
+                        <div class="branding">
+                        <span class="yellow-text">TiPian</span>
+                        <span class="white-text">Portal</span>
+                        </div>
+                    </span>
+                </h2>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="courses.html">
+                            <i class="fas fa-book"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="groups.html">
+                            <i class="fas fa-users"></i>
+                            <span>Groups</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="grades.html">
+                            <i class="fas fa-star"></i>
+                            <span>Grades</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="attendance.html">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Attendance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="messages.html">
+                            <i class="fas fa-comments"></i>
+                            <span>Messages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="payments.html">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Payments</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="sidebar-footer">
+                    <ul>
+                        <li>
+                            <a href="help.html">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Help Center</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Log Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Top Navigation Bar -->
+            <header class="top-nav">
+                <div class="top-nav-left">
+                    <h1>Grades</h1>
+                </div>
+                
+                <div class="top-nav-right">
+                    <div class="notifications">
+                        <button class="notification-btn">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-count">3</span>
+                        </button>
+                        <div class="notification-dropdown">
+                            <!-- Notification content here -->
+                        </div>
+                    </div>
+                    
+                    <div class="user-profile">
+                        <div class="user-info">
+                            <span class="user-name">USER'S NAME</span>
+                        </div>
+                        <div class="user-avatar">
+                            <img src="https://ui-avatars.com/api/?name=U+N&background=f8dd1b&color=000" alt="User Avatar">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Grades Content -->
+            <div class="content">
+                <div class="grades-header">
+                    <div class="semester-select">
+                        <h2 class="page-title">First Semester AY 2024-2025</h2>
+                        <a href="#" class="download-report">
+                            <i class="fas fa-download"></i> Download Report
+                        </a>
+                    </div>
+                    
+                    <div class="term-gpa">
+                        <div class="gpa-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="gpa-details">
+                            <span class="gpa-label">Term GPA</span>
+                            <span class="gpa-value">1.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grades-table">
+                    <div class="table-header">
+                        <div class="header-cell">Course Code</div>
+                        <div class="header-cell">Course Name</div>
+                        <div class="header-cell">Units</div>
+                        <div class="header-cell">Grade</div>
+                    </div>
+                    
+                    <div class="table-body">
+                        <div class="table-row">
+                            <div class="cell">CS101</div>
+                            <div class="cell">Computer Programming</div>
+                            <div class="cell">3</div>
+                            <div class="cell grade">1.00</div>
+                        </div>
+                        
+                        <div class="table-row">
+                            <div class="cell">CS102</div>
+                            <div class="cell">Introduction to Human Computer Interaction</div>
+                            <div class="cell">3</div>
+                            <div class="cell grade">1.00</div>
+                        </div>
+                        
+                        <div class="table-row">
+                            <div class="cell">CS103</div>
+                            <div class="cell">Discrete Mathematics</div>
+                            <div class="cell">3</div>
+                            <div class="cell grade">1.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/grades.js"></script>
+</body>
+</html>
